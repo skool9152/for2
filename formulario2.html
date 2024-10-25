@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario para Entrevista de Trabajo</title>
+    <link rel="stylesheet" href="estilo2.css">
+</head>
+<body>
+
+<div class="form-container">
+    <h2>Formulario para Entrevista de Trabajo</h2>
+    <form>
+        <label for="dni">DNI:</label>
+        <input type="text" id="dni" placeholder="Pon tu DNI" required>
+
+        <label for="nombre">Nombre Completo:</label>
+        <input type="text" id="nombre" required>
+
+        <label for="telefono">Número Telefónico:</label>
+        <input type="tel" id="telefono" placeholder="Ej: 123456789" required>
+
+        <label for="gmail">Gmail:</label>
+        <input type="email" id="gmail" required>
+
+        <label>¿Se encuentra trabajando actualmente?</label>
+        <select id="trabajando" required>
+            <option value="" disabled selected>Selecciona...</option>
+            <option value="si">Sí</option>
+            <option value="no">No</option>
+        </select>
+
+        <label>Nivel de Estudios:</label>
+        <select id="nivel-estudios" required>
+            <option value="" disabled selected>Selecciona...</option>
+            <option value="no-estudios">No tengo estudios</option>
+            <option value="primaria-secundaria">Primaria y Secundaria completa</option>
+            <option value="universitario-tecnico">Universitario o Técnico</option>
+        </select>
+
+        <label for="direccion">Dirección:</label>
+        <input type="text" id="direccion" required>
+
+        <label for="fecha-nacimiento">Fecha de Nacimiento:</label>
+        <input type="date" id="fecha-nacimiento" required>
+
+        <label for="cv">Curriculum Vitae:</label>
+        <input type="file" id="cv" accept=".pdf,.doc,.docx">
+
+        <button type="submit">Enviar</button>
+        <button type="reset">Resetear</button>
+    </form>
+</div>
+
+</body>
+</html>
+
+
